@@ -1,4 +1,4 @@
-module OpenGames.Engine.ValueUpdate where
+module OpenGames.Numerics.ValueUpdate where
 
 import Data.Ix
 import Data.Array.MArray

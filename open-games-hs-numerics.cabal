@@ -26,7 +26,7 @@ source-repository head
 library
   exposed-modules:
       OpenGames.Engine.MonadicOptics
-      OpenGames.Engine.ValueUpdate
+      OpenGames.Numerics.ValueUpdate
   other-modules:
       Paths_open_games_hs_numerics
   hs-source-dirs:
