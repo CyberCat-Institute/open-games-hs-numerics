@@ -15,6 +15,7 @@ description:         Please see the README on GitHub at <https://github.com/Cybe
 dependencies:
 - base >= 4.7 && < 5
 - open-games-hs
+- array
 
 ghc-options:
 - -Wall
