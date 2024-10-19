@@ -1,0 +1,53 @@
+name:                "open-games-hs-numerics"
+version:             0.1.0.0
+github:              "CyberCat-Institute/open-games-hs-numerics"
+license:             "MIT"
+author:              "Institute for Categorical Cybernetics gGmbH"
+maintainer:          "jules@cybercat.institute"
+copyright:           "2024 Institute for Categorical Cybernetics gGmbH"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+description:         Please see the README on GitHub at <https://github.com/CyberCat-Institute/open-games-hs-numerics>
+
+dependencies:
+- base >= 4.7 && < 5
+- open-games-hs
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  blockswap-PoN-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - open-games-hs-numerics
+
+tests:
+  blockswap-PoN-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - open-games-hs-numerics
