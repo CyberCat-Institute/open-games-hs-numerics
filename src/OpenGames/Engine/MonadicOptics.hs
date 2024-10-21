@@ -43,3 +43,11 @@ instance (Monad m) => Context (MonadicContext m) (MonadicOptic m) where
     = let h' = do {(z, (s1, s2)) <- h; return ((z, s2), s1)}
           k' (z, s2) a1 = do {(_, a2) <- v s2; (b1, _) <- k z (a1, a2); return b1}
        in MonadicContext h' k'
+
+-- Pull back a monadic continuation along a monadic optic
+pullback :: (Monad m) => MonadicOptic m s t a b -> (a -> m b) -> s -> m t
+pullback (MonadicOptic v u) k s = do {
+  (z, a) <- v s;
+  b <- k a;
+  u z b
+}
