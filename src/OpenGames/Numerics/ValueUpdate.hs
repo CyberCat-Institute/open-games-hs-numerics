@@ -23,6 +23,18 @@ bellman :: (Ix y)
          -> IO Double
 bellman g strategy values x = pullback (play g (strategy ::- Nil)) (readArray values) x
 
+-- Alternative formulation of Bellman update using evaluate rather than coplay
+bellman' :: (Ix y)
+         => OpenGame (MonadicOptic IO) (MonadicContext IO) '[strategy] '[IO Double] x x' y Double
+         -> strategy
+         -> Values y
+         -> x
+         -> IO Double
+bellman' g strategy values x 
+  = let k () = readArray values
+        result ::- Nil = evaluate g (strategy ::- Nil) (MonadicContext (pure ((), x)) k)
+     in result
+
 convex :: Double -> Double -> Double -> Double
 convex learningRate newValue oldValue = learningRate*newValue + (1 - learningRate)*oldValue
 
@@ -45,4 +57,18 @@ updateValue g strategy learningRate values x = do {
   writeArray values x (convex learningRate target currentValue)
   -- TODO import modifyArray' and use this instead:
   -- modifyArray' values x (convex learningRate target)
+}
+
+-- Alternative using bellman'
+updateValue' :: (Ix x)
+             => OpenGame (MonadicOptic IO) (MonadicContext IO) '[strategy] '[IO Double] x x' x Double
+             -> strategy
+             -> Double
+             -> Values x
+             -> x
+             -> IO ()
+updateValue' g strategy learningRate values x = do {
+  currentValue <- readArray values x;
+  target <- bellman' g strategy values x; -- TODO profile vs !target here
+  writeArray values x (convex learningRate target currentValue)
 }
