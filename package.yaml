@@ -16,6 +16,7 @@ dependencies:
 - base >= 4.7 && < 5
 - open-games-hs
 - array
+- monad-bayes
 
 ghc-options:
 - -Wall
@@ -30,6 +31,11 @@ ghc-options:
 
 library:
   source-dirs: src
+  exposed-modules:
+    - OpenGames.Engine.MonadicOptics
+    - OpenGames.Engine.MC
+    - OpenGames.Numerics.IxUtils
+    - OpenGames.Numerics.ValueUpdate
 
 executables:
   blockswap-PoN-exe:
