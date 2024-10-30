@@ -9,15 +9,9 @@ module OpenGames.Engine.MC where
 
 import Control.Arrow
 
-import Control.Monad.Bayes.Class
-import Control.Monad.Bayes.Population
-import Control.Monad.Bayes.Sampler.Strict
-
 import OpenGames.Engine.OpenGames
 import OpenGames.Engine.MonadicOptics
 import OpenGames.Engine.TLL
-
-type MCIO = PopulationT SamplerIO
 
 -- TODO change evaluate to send n samples
 decisionMC :: (Monad m)
