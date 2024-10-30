@@ -7,8 +7,6 @@ module OpenGames.Engine.MC where
 -- but (1) with the state hack removed for efficiency,
 -- and (2) with a decision operator that just forwards payoffs to an external optimiser
 
-import Control.Arrow
-
 import OpenGames.Engine.OpenGames
 import OpenGames.Engine.MonadicOptics
 import OpenGames.Engine.TLL
