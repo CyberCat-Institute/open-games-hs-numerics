@@ -36,8 +36,6 @@ library:
     - OpenGames.Engine.MC
     - OpenGames.Engine.Repeated
     - OpenGames.Engine.Log
-    - OpenGames.Numerics.IxUtils
-    - OpenGames.Numerics.ValueUpdate
 
 executables:
   open-games-numerics-exe:
