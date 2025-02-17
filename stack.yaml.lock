@@ -26,6 +26,62 @@ packages:
   original:
     commit: 47686a11bf0135d2f22aba0692ebe6d12a42530f
     git: https://github.com/marcosh/crem.git
+- completed:
+    hackage: monad-bayes-1.3.0@sha256:024ce97d7d6abc9b4ffa22bfe1cfabb420feac67ecbd34fe8777c2fd27f56fea,6551
+    pantry-tree:
+      sha256: 1b1466cced4cd4734e44c266e3012a6e0d1c959c9d97aeac30de216e046f4787
+      size: 4851
+  original:
+    hackage: monad-bayes-1.3.0
+- completed:
+    hackage: hspec-2.11.9@sha256:6e7fb7a40404f11b028f1b19f07779887b2c8af04cbae7eaea73e83c440954c7,1763
+    pantry-tree:
+      sha256: 011f3767b57b7ecc9b34c390a6a0f9951bb0e503401365cf99ab79316ab2a898
+      size: 584
+  original:
+    hackage: hspec-2.11.9@sha256:6e7fb7a40404f11b028f1b19f07779887b2c8af04cbae7eaea73e83c440954c7,1763
+- completed:
+    hackage: hspec-core-2.11.9@sha256:a38fdefae046551335b56300e19b1ab2f902aa6401d1eb374e5ea81df85f6997,6826
+    pantry-tree:
+      sha256: 6ed4738349e4f030337bb0d1ee21e7191f47cbbe034395259ba9c39f49e14b25
+      size: 6233
+  original:
+    hackage: hspec-core-2.11.9@sha256:a38fdefae046551335b56300e19b1ab2f902aa6401d1eb374e5ea81df85f6997,6826
+- completed:
+    hackage: hspec-discover-2.11.9@sha256:74c689bf33d7373bac5d4ffe273fe0b034d277c30aa2a23d3790d5b365dbdf1c,2169
+    pantry-tree:
+      sha256: 9ab82dd8116be450aa1c6aedce68e6d4ce3993e59fae31021d9903f6233950db
+      size: 829
+  original:
+    hackage: hspec-discover-2.11.9@sha256:74c689bf33d7373bac5d4ffe273fe0b034d277c30aa2a23d3790d5b365dbdf1c,2169
+- completed:
+    hackage: hspec-expectations-0.8.4@sha256:4237f094a7931202ff57ac6475542b0b314b50a7024550e2b6eb87cfb0d4ff93,1702
+    pantry-tree:
+      sha256: 87681840d430b84686f83f1ab8b5873b09c349775698665233443914acf9ba2b
+      size: 741
+  original:
+    hackage: hspec-expectations-0.8.4@sha256:4237f094a7931202ff57ac6475542b0b314b50a7024550e2b6eb87cfb0d4ff93,1702
+- completed:
+    hackage: lens-5.2.3@sha256:08f4e81aa3fa3f175f6932089d6bb8b17669e3d00aa2968b853287e5e8d7f024,15237
+    pantry-tree:
+      sha256: 73d156aed554ee493d74f43b605e0f2443f1da5ea6d9333a55b5666564fe3b8c
+      size: 8351
+  original:
+    hackage: lens-5.2.3@sha256:08f4e81aa3fa3f175f6932089d6bb8b17669e3d00aa2968b853287e5e8d7f024,15237
+- completed:
+    hackage: linear-1.22@sha256:6402f0140156d2792ca0cbef3f5af2ec3675660e381574ac968cd5884724b8ba,4132
+    pantry-tree:
+      sha256: 8ccd6646c1a5f2f7998a19a04f00200e44ee08186e980153ec371d6d114eb0e6
+      size: 2042
+  original:
+    hackage: linear-1.22@sha256:6402f0140156d2792ca0cbef3f5af2ec3675660e381574ac968cd5884724b8ba,4132
+- completed:
+    hackage: vty-5.38@sha256:c3b46c8072f92b61dad09dac45ede37f1a093836e14ac84ece6515a4d3222864,5628
+    pantry-tree:
+      sha256: b413c72281bb0f48eb0e4b45e272e3a18036ea91b4850315e8c2487ef719f9f3
+      size: 3499
+  original:
+    hackage: vty-5.38@sha256:c3b46c8072f92b61dad09dac45ede37f1a093836e14ac84ece6515a4d3222864,5628
 snapshots:
 - completed:
     sha256: 126fa33ceb11f5e85ceb4e86d434756bd9a8439e2e5776d306a15fbc63b01e89

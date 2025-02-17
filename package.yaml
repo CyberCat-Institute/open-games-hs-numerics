@@ -40,7 +40,7 @@ library:
     - OpenGames.Numerics.ValueUpdate
 
 executables:
-  blockswap-PoN-exe:
+  open-games-numerics-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -51,7 +51,7 @@ executables:
     - open-games-hs-numerics
 
 tests:
-  blockswap-PoN-test:
+  open-games-numerics-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
